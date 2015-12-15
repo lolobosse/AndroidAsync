@@ -182,7 +182,7 @@ SocketIOClient.connect(AsyncHttpClient.getDefaultInstance(), "http://192.168.1.2
 ```java
 AsyncHttpPost post = new AsyncHttpPost("http://myservercom/postform.html");
 MultipartFormDataBody body = new MultipartFormDataBody();
-body.addFilePart("my-file", new File("/path/to/file.txt");
+body.addFilePart("my-file", new File("/path/to/file.txt"));
 body.addStringPart("foo", "bar");
 post.setBody(body);
 AsyncHttpClient.getDefaultInstance().executeString(post, new AsyncHttpClient.StringCallback(){
